@@ -1,0 +1,9 @@
+<h1 class="text-center">{{ data.currentPost.title }}</h1>
+<div class="row">
+  <p>{{ data.currentPost.content }}</p>
+</div>
+<div class="row">
+  <a ng-click="returnBack()" class="btn btn-primary">Return</a>
+  <button class="btn btn-default" ng-click="editPost()">Edit</button>
+  <button class="btn btn-danger" ng-click="deletePost()">Delete</button>
+</div>

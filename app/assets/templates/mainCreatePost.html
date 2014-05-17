@@ -1,0 +1,12 @@
+<form>
+  <fieldset>
+    <label><strong>Title</strong></label>
+    <input class="col-lg-12" ng-model="formData.newPostTitle" placeholder="New Post" type="text" maxlength="250">
+    <label><strong>Body</strong></label>
+    <textarea class="col-lg-12" style="height: 250px" ng-model="formData.newPostContent" placeholder="Type your post here..."></textarea>
+    <br>
+    <button class="btn btn-primary" ng-click="createPost()">Create</button>
+    <button class="btn btn-danger pull-right" ng-click="clearPost()">Clear post</button>
+  </fieldset>
+</form>
+<a ng-click="returnBack()">Return</a>
