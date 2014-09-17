@@ -19,7 +19,7 @@ module AngularRailsBlog
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-    config.assets.paths << "#{Rails}/vendor/assets/fonts"
+    config.assets.paths << Rails.root.join("#{Rails}/vendor/assets/fonts", "bower_components")
     config.assets.precompile += %w( welcome.js )
   end
 end
