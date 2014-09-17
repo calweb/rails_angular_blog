@@ -1,0 +1,5 @@
+asset 'jquery'
+asset 'angular'
+asset 'angular-route'
+asset 'underscore'
+asset 'bootstrap'
